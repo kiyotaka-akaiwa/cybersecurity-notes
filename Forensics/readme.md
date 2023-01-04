@@ -6,6 +6,7 @@
 
 **Important Files and Folders**:
 - C:/Windows/System32/NetworkList - NLA
+- C:/Windows/CSC - CSC
 
 ### Memory Forensics
 
@@ -36,8 +37,11 @@
     - HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation - Time Zone
     - HKLM\SYSTEM\CurrentControlSet\Control\FileSystem\NtfsDisableLastAccessUpdate
     - HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces - List of network interfaces and IP addresses
+    - HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Shares - Network shares
+    - HKLM\SYSTEM\CurrentControlSet\Control\Windows - Shutdown time
+    - HKLM\SYSTEM\CurrentControlSet\Control\Watchdog\Display - Shutdown Count (Windows XP)
   - Networks
-    - HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures - Previously Connected Network and Domains
+    - HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures - Previously Connected Network and Domains (MAC Address can be used for Geolocation via WiGLE.net)
     - HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Nla\Cache - NLA Cache
     - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\HomeGroup - NLA Information
     - HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles - First and last connection time to the network
@@ -49,4 +53,21 @@
         - 0x00 - Public
         - 0x01 - Private/Home 
         - 0x02 - Domain/Work
-    
+  - Autostarts
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+    - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+    - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+    - HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+    - HKLM\SYSTEM\CurrentControlSet\Services\ - If "Start" value is set to "0x02", it will run
+- User Activity
+  - Search History
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\WordWheelQuery - Explorer search history
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths - Manually typed path
+  - Opened File
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs - Recently opened file path
+    - HKCU\SOFTWARE\Microsoft\Office\<Version>\<Program>\FileMRU - Recently opened file using Office softwares
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU - Executable used to open the Open\Save explorer dialogue popup
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU - Open/Save location history from Explorer dialogue popup
+  - Command Executed
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU - Last exectured "Run" command
