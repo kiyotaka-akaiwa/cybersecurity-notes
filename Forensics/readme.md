@@ -69,5 +69,8 @@
     - HKCU\SOFTWARE\Microsoft\Office\<Version>\<Program>\FileMRU - Recently opened file using Office softwares
     - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU - Executable used to open the Open\Save explorer dialogue popup
     - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU - Open/Save location history from Explorer dialogue popup
-  - Command Executed
+  - Command and Program Executed
     - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU - Last exectured "Run" command
+    - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count - Last Run Time, Run Count, Name (ROT13 encoded), Focus Time, and Focus Count of an application
+      - CEBFF5CD - Executable File Execution
+      - F4E57C4B - Shortcut File Execution
