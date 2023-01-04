@@ -74,3 +74,23 @@
     - HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\<GUID>\Count - Last Run Time, Run Count, Name (ROT13 encoded), Focus Time, and Focus Count of an application
       - CEBFF5CD - Executable File Execution
       - F4E57C4B - Shortcut File Execution
+      - https://learn.microsoft.com/en-us/dotnet/desktop/winforms/controls/known-folder-guids-for-file-dialog-custom-places
+       - GUID for common folders
+
+
+### Shell Item
+
+**Shortcut File**
+
+Structures - https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943 
+Recent Items - C:/Users/<User>/AppData/Roaming/Microsoft/Windows/Recent (Cap of 149 files/folders)
+
+Tools:
+- LEcmd.exe - LNK Explorer
+- lp.exe - LNK Parsing Utility
+
+**Windows Task Bar Jumplists**
+
+**Charm Bar**
+
+**Shellbags**
