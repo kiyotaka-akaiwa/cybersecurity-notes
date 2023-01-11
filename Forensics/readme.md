@@ -1,5 +1,18 @@
 # Forensics
 
+## File Analysis
+
+**Tools**:
+- Foremost
+- Binwalk
+- PDF
+  - qPDF
+  - xpdf
+## Ransomware
+
+**Tools**:
+- RakhniRecryptor - https://support.kaspersky.com/common/disinfection/10556
+
 ## Windows
 
 ### Imaging
@@ -9,6 +22,9 @@
 - C:/Windows/CSC - CSC
 
 ### Memory Forensics
+
+**Tools**:
+- Volatility 3 (Must be run with sudo first time to create symbol table
 
 ### Registry
 
